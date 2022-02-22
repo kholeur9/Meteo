@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-image: url(img/meteo-des-plages-974.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.input-search{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+}
+.input-search .search{
+    display: block;
+    text-align: center;
+    color: #fff;
+}
+.input-search .search .fa-search{
+    cursor: pointer;
+}
+.input-search .bar-search{
+    display: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    border-radius: 6px;
+}
+
+.input-search input{
+    width: 400px;
+    height: 40px;
+    padding: 8px;
+    font-weight: 500;
+    color: #003569;
+    border: none;
+    outline: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    font-size: 15px;
+    transition: .9s ease-in-out;
+}
+.input-search .btn-city{
+    width: 100px;
+    height: 40px;
+    padding: 0 10px;
+    border: none;
+    background-color: orangered;
+    color: #fff;
+    font-size: 15px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    cursor: pointer;
+}
+
+.container{
+    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 60vh;
+    padding: 20px;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    border-radius: 8px;
+}
+.overlay{
+    position: absolute;
+    width: 100% auto;
+    height: 100%;
+    background-color: rgba(7, 192, 248, 0.185);
+}
+.infos{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.infos .ville{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+.infos .day{
+    display: none;
+    color: #fff;
+}
+.infos .night{
+    display: none;
+    color: #fff;
+}
+.local-time{
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+}
+.local-time .local{
+    color: #fff;
+    font-weight: 600;
+}
+.local-time .weather-descriptions{
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 500;
+}
+.detail{
+    width: 100%;
+    margin-top: 30px;
+}
+.detail .temperature{
+    color: #fff;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 500;
+}
+.climat{
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 20px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.472);
+    color: #fff;
+}
+.climat .text{
+    font-weight: 600;
+}
+.climat .humidite{
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+/*
+.container{
+    position: relative;
+    width: 450px;
+    border-radius: 20px;
+    margin: 50px auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    background-color: #343d4b;
+    overflow: hidden;
+}
+.temps{
+    position: absolute;
+    margin: 20px;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.time{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+.humidity{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+} */
+.indication{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.indication .hello{
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 70px;
+    font-weight: 500;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .7);
+}
+.indication span{
+    color: orangered;
+}
+.author{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 12px;
+}

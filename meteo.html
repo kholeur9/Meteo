@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="meteo.css">
+    <script defer src="./all.js"></script>
+    <title>Ma meteo</title>
+</head>
+<body>
+    <div class="input-search">
+        <div class="bar-search">
+            <input type="search" id="barre" placeholder="Rechercher une ville...">
+            <button onclick="weatherApp()" class="btn-city">Chercher</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="overlay"></div>
+        <div class="infos">
+            <p class="ville"></p>
+            <!-- <p class="day"><i class="far fa-sun fa-4x"></i></p>
+            <p class="night"><i class="fa fa-moon fa-3x"></i></p> -->
+            <img alt="" id="image" style="border-radius: 10px; background: green;">
+        </div>
+        <div class="local-time">
+            <p class="local"></p>
+            <p class="weather-descriptions"></p>
+        </div>
+        <div class="detail">
+            <h2 class="temperature"></h2>
+        </div>
+        <div class="climat">
+            <div class="humidite">
+                <p class="text">Humidité </p>
+                <p class="humidity"></p>
+            </div>
+            <div class="humidite">
+                <p class="text">Précipitation </p>
+                <p class="humidity precip"></p>
+            </div>
+            <div class="humidite">
+                <p class="text">Vent </p>
+                <p class="humidity vent"></p>
+            </div>
+        </div>
+    </div>
+    <div class="indication">
+        <p class="hello">La meteo pour <span>tous</span> !</p>
+    </div>
+    <!-- <div class="container">
+        <div class="temps">
+            <p class="time"></p>
+        </div>
+    </div> -->
+    <p class="author">Développer pas MOUTSINGA Yann (kholeur DEV)</p>
+    <script src="./meteo.js"></script>
+</body>
+</html>
